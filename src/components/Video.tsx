@@ -46,8 +46,8 @@ export function Video(props: VideoProps) {
     variables: {
       slug: props.lessonSlug,
     },
+    fetchPolicy: "no-cache", // @Terabyte - Discord
   });
-  console.log(data);
 
   if (!data) {
     return (
