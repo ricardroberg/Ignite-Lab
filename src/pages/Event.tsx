@@ -12,7 +12,7 @@ export function Event() {
       <Header />
       <main className="flex flex-1">
         {slug ? (
-          <Video />
+          <Video lessonSlug={slug} />
         ) : (
           <div className="flex flex-1 text-center text-justify p-10 gap-2 text-2xl bold text-gray-200">
             Clique em alguma aula <ArrowRight size={24} />
